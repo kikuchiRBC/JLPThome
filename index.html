@@ -1,0 +1,1028 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>特定技能（とくていぎのう）SSW 無料（むりょう）問題集（もんだいしゅう）</title>
+
+<meta name="description"
+content="特定技能の宿泊・介護・ビルクリーニング無料問題集。ふりがな・英語・ネパール語・ベトナム語付き。">
+
+<style>
+
+/* =========================
+   基本
+========================= */
+
+*{
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    margin:0;
+    font-family:Arial,"Noto Sans JP",sans-serif;
+    color:#4a3b20;
+
+    background:
+        linear-gradient(
+            180deg,
+            #fffdf2 0%,
+            #fff8df 45%,
+            #eef9f7 100%
+        );
+
+    min-height:100vh;
+}
+
+ruby{
+    ruby-align:center;
+}
+
+
+/* =========================
+   HEADER
+========================= */
+
+header{
+    position:relative;
+    overflow:hidden;
+
+    padding:45px 15px 55px;
+
+    text-align:center;
+
+    background:
+        linear-gradient(
+            135deg,
+            #ffd54f,
+            #f4b400,
+            #e6a800
+        );
+
+    color:#5a4300;
+
+    box-shadow:
+        0 8px 25px rgba(120,90,0,.22);
+}
+
+header::before,
+header::after{
+    content:"";
+    position:absolute;
+
+    border-radius:50%;
+    background:rgba(255,255,255,.18);
+
+    pointer-events:none;
+}
+
+header::before{
+    width:240px;
+    height:240px;
+    left:-80px;
+    top:-120px;
+}
+
+header::after{
+    width:280px;
+    height:280px;
+    right:-100px;
+    bottom:-170px;
+}
+
+
+/* =========================
+   タイトル
+========================= */
+
+.logo{
+    position:relative;
+    z-index:2;
+
+    margin:0;
+
+    font-size:clamp(28px,6vw,48px);
+
+    font-weight:900;
+
+    letter-spacing:1px;
+
+    text-shadow:
+        2px 3px 0 rgba(255,255,255,.4);
+}
+
+.subtitle{
+    position:relative;
+    z-index:2;
+
+    margin:14px 0 0;
+
+    font-size:clamp(14px,3vw,19px);
+
+    font-weight:bold;
+
+    color:#6b4d00;
+}
+
+
+/* =========================
+   MAIN
+========================= */
+
+main{
+    width:94%;
+    max-width:1050px;
+
+    margin:30px auto 80px;
+}
+
+
+/* =========================
+   INTRO
+========================= */
+
+.intro{
+    background:#ffffffee;
+
+    border-radius:22px;
+
+    padding:20px 15px;
+
+    text-align:center;
+
+    box-shadow:
+        0 7px 20px rgba(80,70,30,.12);
+
+    border:3px solid #ffe082;
+}
+
+.intro h2{
+    margin:0 0 8px;
+
+    color:#8a6100;
+
+    font-size:clamp(20px,4vw,27px);
+}
+
+.intro p{
+    margin:4px 0;
+
+    line-height:1.7;
+
+    font-weight:bold;
+
+    color:#655a49;
+}
+
+
+/* =========================
+   SECTION TITLE
+========================= */
+
+.section-title{
+    margin:35px 0 18px;
+
+    text-align:center;
+
+    color:#654d1b;
+
+    font-size:26px;
+}
+
+.section-title span{
+    display:block;
+
+    margin-top:4px;
+
+    font-size:13px;
+
+    color:#8c7b58;
+}
+
+
+/* =========================
+   COURSE GRID
+========================= */
+
+.course-grid{
+    display:grid;
+
+    grid-template-columns:
+        repeat(3,1fr);
+
+    gap:18px;
+}
+
+
+/* =========================
+   COURSE CARD
+========================= */
+
+.course-card{
+    position:relative;
+
+    background:#fff;
+
+    border-radius:22px;
+
+    padding:22px 18px;
+
+    text-align:center;
+
+    box-shadow:
+        0 7px 20px rgba(60,50,20,.15);
+
+    transition:
+        transform .2s ease,
+        box-shadow .2s ease;
+
+    border-top:6px solid #f4b400;
+}
+
+.course-card:hover{
+    transform:translateY(-5px);
+
+    box-shadow:
+        0 12px 28px rgba(60,50,20,.22);
+}
+
+
+/* =========================
+   アイコン
+========================= */
+
+.course-icon{
+    width:82px;
+    height:82px;
+
+    margin:0 auto 10px;
+
+    border-radius:50%;
+
+    display:flex;
+
+    align-items:center;
+    justify-content:center;
+
+    font-size:45px;
+}
+
+
+/* 宿泊 */
+
+.hotel{
+    border-top-color:#e0a800;
+}
+
+.hotel .course-icon{
+    background:#fff1b8;
+}
+
+
+/* 介護 */
+
+.care{
+    border-top-color:#26a69a;
+}
+
+.care .course-icon{
+    background:#d8f4ef;
+}
+
+
+/* ビルクリーニング */
+
+.cleaning{
+    border-top-color:#64b5f6;
+}
+
+.cleaning .course-icon{
+    background:#dceeff;
+}
+
+
+/* =========================
+   カードタイトル
+========================= */
+
+.course-card h3{
+    margin:8px 0 3px;
+
+    font-size:25px;
+
+    color:#4d402a;
+}
+
+.course-card .english-title{
+    margin:0 0 13px;
+
+    font-size:13px;
+
+    color:#8b7957;
+
+    font-weight:bold;
+}
+
+
+/* =========================
+   翻訳
+========================= */
+
+.translation{
+    margin:10px 0;
+
+    padding:10px;
+
+    background:#fffaf0;
+
+    border-radius:12px;
+
+    text-align:left;
+
+    font-size:13px;
+
+    line-height:1.7;
+
+    border:1px solid #f0dfac;
+}
+
+.translation div{
+    margin:2px 0;
+}
+
+.translation .label{
+    display:inline-block;
+
+    min-width:72px;
+
+    font-weight:bold;
+
+    color:#876500;
+}
+
+
+/* =========================
+   ボタン
+========================= */
+
+.start-btn{
+    display:block;
+
+    width:100%;
+
+    margin-top:14px;
+
+    padding:12px 8px;
+
+    border-radius:999px;
+
+    text-decoration:none;
+
+    font-weight:900;
+
+    font-size:16px;
+
+    box-shadow:
+        0 4px 10px rgba(0,0,0,.16);
+
+    transition:.2s;
+}
+
+.start-btn:hover{
+    transform:translateY(-2px);
+}
+
+
+/* 宿泊 */
+
+.hotel-btn{
+    background:
+        linear-gradient(
+            135deg,
+            #ffd54f,
+            #e0a800
+        );
+
+    color:#5a4300;
+}
+
+
+/* 介護 */
+
+.care-btn{
+    background:
+        linear-gradient(
+            135deg,
+            #26a69a,
+            #00897b
+        );
+
+    color:white;
+}
+
+
+/* 清掃 */
+
+.cleaning-btn{
+    background:
+        linear-gradient(
+            135deg,
+            #64b5f6,
+            #1976d2
+        );
+
+    color:white;
+}
+
+
+/* =========================
+   特徴
+========================= */
+
+.features{
+    margin-top:35px;
+
+    display:grid;
+
+    grid-template-columns:
+        repeat(4,1fr);
+
+    gap:10px;
+}
+
+.feature{
+    background:#ffffffdd;
+
+    border-radius:16px;
+
+    padding:14px 8px;
+
+    text-align:center;
+
+    box-shadow:
+        0 4px 12px rgba(60,50,20,.1);
+
+    border:2px solid #f3df9b;
+}
+
+.feature-icon{
+    display:block;
+
+    font-size:28px;
+
+    margin-bottom:5px;
+}
+
+.feature strong{
+    display:block;
+
+    color:#665021;
+
+    font-size:13px;
+}
+
+.feature small{
+    color:#777;
+
+    line-height:1.4;
+}
+
+
+/* =========================
+   FOOTER
+========================= */
+
+footer{
+    padding:25px 15px 40px;
+
+    text-align:center;
+
+    background:#4c463a;
+
+    color:#fff;
+
+    line-height:1.8;
+}
+
+footer strong{
+    color:#ffe082;
+}
+
+footer small{
+    display:block;
+
+    margin-top:5px;
+
+    color:#ddd;
+}
+
+
+/* =========================
+   TOP
+========================= */
+
+.top-btn{
+    position:fixed;
+
+    right:18px;
+    bottom:18px;
+
+    width:46px;
+    height:46px;
+
+    border-radius:50%;
+
+    display:flex;
+
+    align-items:center;
+    justify-content:center;
+
+    text-decoration:none;
+
+    background:
+        linear-gradient(
+            135deg,
+            #ffd54f,
+            #f4b400
+        );
+
+    color:#5a4300;
+
+    font-weight:bold;
+
+    box-shadow:
+        0 5px 15px rgba(0,0,0,.25);
+
+    z-index:1000;
+}
+.course-image{
+    width:80%;
+    height:100px;
+    margin:10px auto 12px;
+    border-radius:12px;
+    overflow:hidden;
+    background:#fffbea;
+    border:2px solid #f0d77a;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}
+
+.course-image img{
+    width:100%;
+    height:100%;
+    object-fit:contain;
+    display:block;
+}
+
+/* =========================
+   スマホ
+========================= */
+
+@media(max-width:800px){
+
+    .course-grid{
+        grid-template-columns:1fr;
+    }
+
+    .course-card{
+        max-width:500px;
+        width:100%;
+        margin:auto;
+    }
+
+    .features{
+        grid-template-columns:
+            repeat(2,1fr);
+    }
+
+}
+
+@media(max-width:500px){
+
+    header{
+        padding:38px 12px 45px;
+    }
+
+    .logo{
+        font-size:30px;
+    }
+
+    main{
+        width:92%;
+    }
+
+    .intro{
+        padding:18px 12px;
+    }
+
+    .section-title{
+        font-size:23px;
+    }
+
+    .course-card{
+        padding:20px 15px;
+    }
+
+    .translation{
+        font-size:12px;
+    }
+
+}
+
+</style>
+</head>
+
+
+<body id="top">
+
+
+<!-- =========================
+     HEADER
+========================= -->
+
+<header>
+
+    <h1 class="logo">
+        🎓
+        <ruby>特定技能<rt>とくていぎのう</rt></ruby>
+        SSW
+        <ruby>無料<rt>むりょう</rt></ruby>
+        <ruby>問題集<rt>もんだいしゅう</rt></ruby>
+    </h1>
+
+    <p class="subtitle">
+        <ruby>試験<rt>しけん</rt></ruby>の
+        <ruby>勉強<rt>べんきょう</rt></ruby>を
+        <ruby>楽<rt>たの</rt></ruby>しく！
+    </p>
+
+</header>
+
+
+<main>
+
+
+<!-- =========================
+     INTRO
+========================= -->
+
+<section class="intro">
+
+    <h2>
+        📚
+        <ruby>勉強<rt>べんきょう</rt></ruby>
+        する
+        <ruby>分野<rt>ぶんや</rt></ruby>
+        を
+        <ruby>選<rt>えら</rt></ruby>んでください
+    </h2>
+
+    <p>
+        ふりがな・English・नेपाली・Tiếng Việt
+    </p>
+
+</section>
+
+
+<!-- =========================
+     COURSE TITLE
+========================= -->
+
+<h2 class="section-title">
+    🌟 SSW
+    <ruby>試験対策<rt>しけんたいさく</rt></ruby>
+    <span>
+        Choose your study field
+    </span>
+</h2>
+
+
+<section class="course-grid">
+
+<!-- =========================
+     宿泊
+========================= -->
+
+<div class="course-card hotel">
+
+    <div class="course-icon">
+        🏨
+    </div>
+
+    <!-- 宿泊画像 -->
+    <div class="course-image">
+        <img
+            src="images/home_accommodation.png"
+            alt="宿泊">
+    </div>
+
+    <h3>
+        <ruby>宿泊<rt>しゅくはく</rt></ruby>
+    </h3>
+
+    <div class="translation">
+
+        <div>
+            <span class="label">🇬🇧 English</span>
+            Accommodation
+        </div>
+
+        <div>
+            <span class="label">🇳🇵 नेपाली</span>
+            होटल / आवास
+        </div>
+
+        <div>
+            <span class="label">🇻🇳 Tiếng Việt</span>
+            Khách sạn / Lưu trú
+        </div>
+
+    </div>
+
+    <a
+        href="https://kikuchirbc.github.io/accommodation/index.html"
+        class="start-btn hotel-btn">
+
+        🏨
+        START
+
+    </a>
+
+</div>
+
+
+<!-- =========================
+     介護
+========================= -->
+
+<div class="course-card care">
+
+    <div class="course-icon">
+        🤝
+    </div>
+
+    <!-- 介護画像 -->
+    <div class="course-image">
+        <img
+            src="images/home_kaigo.png"
+            alt="介護">
+    </div>
+
+    <h3>
+        <ruby>介護<rt>かいご</rt></ruby>
+    </h3>
+
+    <div class="translation">
+
+        <div>
+            <span class="label">🇬🇧 English</span>
+            Nursing Care
+        </div>
+
+        <div>
+            <span class="label">🇳🇵 नेपाली</span>
+            हेरचाह / नर्सिङ केयर
+        </div>
+
+        <div>
+            <span class="label">🇻🇳 Tiếng Việt</span>
+            Chăm sóc điều dưỡng
+        </div>
+
+    </div>
+
+    <a
+        href="https://kikuchirbc.github.io/kaigo/"
+        class="start-btn care-btn">
+
+        🤝
+        START
+
+    </a>
+
+</div>
+
+
+<!-- =========================
+     ビルクリーニング
+========================= -->
+
+<div class="course-card cleaning">
+
+    <div class="course-icon">
+        🧹
+    </div>
+
+    <!-- ビルクリーニング画像 -->
+    <div class="course-image">
+        <img
+            src="images/home_cleaning.png"
+            alt="ビルクリーニング">
+    </div>
+
+    <h3>
+        <ruby>ビルクリーニング<rt></rt></ruby>
+    </h3>
+
+    <div class="translation">
+
+        <div>
+            <span class="label">🇬🇧 English</span>
+            Building Cleaning
+        </div>
+
+        <div>
+            <span class="label">🇳🇵 नेपाली</span>
+            भवन सरसफाइ
+        </div>
+
+        <div>
+            <span class="label">🇻🇳 Tiếng Việt</span>
+            Vệ sinh tòa nhà
+        </div>
+
+    </div>
+
+    <a
+        href="https://kikuchirbc.github.io/cleaning/"
+        class="start-btn cleaning-btn">
+
+        🧹
+        START
+
+    </a>
+
+</div>
+
+
+<!-- =========================
+     JFT-BASIC
+========================= -->
+
+<div class="course-card jft">
+
+    <div class="course-icon">
+        📝
+    </div>
+
+    <!-- JFT-BASIC画像 -->
+    <div class="course-image">
+        <img
+            src="images/home_jftbasic.png"
+            alt="JFT-BASIC">
+    </div>
+
+    <h3>
+        JFT-BASIC
+    </h3>
+
+    <div class="translation">
+
+        <div>
+            <span class="label">🇬🇧 English</span>
+            Japanese Test
+        </div>
+
+        <div>
+            <span class="label">🇳🇵 नेपाली</span>
+            जापानी भाषा परीक्षा
+        </div>
+
+        <div>
+            <span class="label">🇻🇳 Tiếng Việt</span>
+            Bài thi tiếng Nhật
+        </div>
+
+    </div>
+
+    <a
+        href="https://kikuchirbc.github.io/jftbasic/"
+        class="start-btn jft-btn">
+
+        📝
+        START
+
+    </a>
+
+</div>
+
+</section>
+
+
+<!-- =========================
+     FEATURES
+========================= -->
+
+<section class="features">
+
+    <div class="feature">
+
+        <span class="feature-icon">
+            🔤
+        </span>
+
+        <strong>
+            ふりがな
+        </strong>
+
+        <small>
+            Furigana
+        </small>
+
+    </div>
+
+
+    <div class="feature">
+
+        <span class="feature-icon">
+            📝
+        </span>
+
+        <strong>
+            <ruby>無料<rt>むりょう</rt></ruby>
+        </strong>
+
+        <small>
+            Free
+        </small>
+
+    </div>
+
+
+    <div class="feature">
+
+        <span class="feature-icon">
+            📚
+        </span>
+
+        <strong>
+            <ruby>単語<rt>たんご</rt></ruby>
+        </strong>
+
+        <small>
+            Vocabulary
+        </small>
+
+    </div>
+
+
+    <div class="feature">
+
+        <span class="feature-icon">
+            📱
+        </span>
+
+        <strong>
+            スマホOK
+        </strong>
+
+        <small>
+            Smartphone
+        </small>
+
+    </div>
+
+</section>
+
+
+</main>
+
+
+<!-- =========================
+     FOOTER
+========================= -->
+
+<footer>
+
+    <strong>
+        🎓 SSW
+        <ruby>学習<rt>がくしゅう</rt></ruby>サイト
+    </strong>
+
+    <br>
+
+    特定技能（SSW）
+    <ruby>試験対策<rt>しけんたいさく</rt></ruby>
+
+    <small>
+        © SSW Learning Site
+    </small>
+
+</footer>
+
+
+<!-- TOP -->
+
+<a href="#top" class="top-btn">
+    ↑
+</a>
+
+
+</body>
+</html>
